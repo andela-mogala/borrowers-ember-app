@@ -1,8 +1,14 @@
 <div class="col-8 px2 mx-auto p1 h2 center">
-  <p class="">{{model.firstName}}</p>
-  <p class="">{{model.lastName}}</p>
-  <p class="">{{model.email}}</p>
-  <p class="">{{model.twitter}}</p>
-  <p class="">{{link-to 'Edit info' 'friends.edit' model}}</p>
-  <p class=""><button {{action 'delete' model}}>Delete</button></p>
+  <div>
+    <img src="http://www.fillmurray.com/200/200">
+    <p class="">{{model.fullName}}</p>
+    <p class="">{{model.email}}</p>
+    <p class="">{{model.twitter}}</p>
+    <p class="">{{link-to 'Edit info' 'friends.edit' model}}</p>
+    <p class=""><button {{action 'delete' model}}>Delete</button></p>
+  </div>
+  <div class="flex-auto ml1 loans-container">
+    {{outlet}}
+  </div>
 </div>
+
