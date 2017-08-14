@@ -1,1 +1,5 @@
-{{outlet}}
+<div class="col-8 px2 mx-auto p1 h2 center">
+  <p>{{model.name}}</p>
+  <p>{{link-to 'Edit Article' 'articles.edit' model}}</p>
+  <p><button {{action 'delete' model}} class="btn btn-primary bg-red">Delete</button></p>
+</div>
