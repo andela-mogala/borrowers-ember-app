@@ -1,15 +1,12 @@
-<h1>Friends Index</h1>
 
-<h2>Total Friends {{model.length}}</h2>
-
-<table>
-  <thead>
-    <tr>
+<table class="mt3 fit">
+  <thead class="p1 h2">
+    <tr class="white bg-blue">
       <th>Name</th>
       <th></th>
     </tr>
   </thead>
-  <tbody>
+  <tbody class="p1 h3">
     {{#each model as |friend|}}
       <tr>
         <td>{{link-to friend.fullName 'friends.show' friend}}</td>
