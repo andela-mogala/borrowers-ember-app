@@ -29,7 +29,7 @@ export default Ember.Component.extend({
 
     },
     cancel() {
-      this.cancel();
+      this.cancel(this.get('model'));
     }
   }
 });
