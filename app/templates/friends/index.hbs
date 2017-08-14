@@ -10,7 +10,7 @@
     {{#each model as |friend|}}
       <tr>
         <td>{{link-to friend.fullName 'friends.show' friend}}</td>
-        <td><button {{action 'delete' friend}}>Delete</button></td>
+        <td><button {{action 'delete' friend}} class="btn btn-outline mbl red">Delete</button></td>
       </tr>
     {{/each}}
   </tbody>
