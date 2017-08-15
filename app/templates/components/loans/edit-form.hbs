@@ -3,11 +3,12 @@
     <h2 class="white bg-red p1">{{errorMessage}}</h2>
   {{/if}}
   <label>Select an Article</label>
-  <select class="select">
-    <option value="">Article 1</option>
-    <option value="">Article 2</option>
-    <option value="">Article 3</option>
-  </select>
+  {{#power-select class='select'
+    selected=model.article
+    options=articles
+    onchange=(action (mut model.article)) as |article|}}
+    {{article.name}}
+  {{/power-select}}
   <br>
   {{textarea value=model.notes placeholder='Notes' class='textarea' cols='50' rows='10'}}
   <br>

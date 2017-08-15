@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model() {
     return this.store.createRecord('loan', {
-      friend: this.modelFor('friend/show')
+      friend: this.modelFor('friends/show')
     });
   }
 });
