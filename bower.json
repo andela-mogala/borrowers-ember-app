@@ -1,0 +1,21 @@
+{
+  "name": "borrowers",
+  "description": "Small description for borrowers goes here",
+  "main": "",
+  "authors": [
+    "Michael Ogala <michael.ogala@andela.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/andela-mogala/borrowers-ember-app",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "moment": "^2.18.1"
+  }
+}
