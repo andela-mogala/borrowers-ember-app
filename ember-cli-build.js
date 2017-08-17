@@ -7,7 +7,6 @@ module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
   });
-  app.import('bower_components/moment/moment.js');
   app.import('vendor/fontello/fontello.css');
   app.import('vendor/fontello/font/fontello.tff', {
     destDir: 'assets/font'
