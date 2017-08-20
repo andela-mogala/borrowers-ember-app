@@ -9,7 +9,7 @@ export default Ember.Component.extend({
           .then((article) => {
             this.save(article);
           })
-          .catch(err => {
+          .catch(() => {
             this.set('errorMessage', 'Article did not save for some reason');
           });
       } else {
